@@ -9,6 +9,7 @@ fun main() {
     val sumMoneyStudent = moneyStudent * countStudent
     val allMoney = sumMoneyEmployee + sumMoneyStudent
     val averageMoney = allMoney / (countEmployee + countStudent)
+
     println("ЗП постоянных сотрудников: $sumMoneyEmployee")
     println("ЗП всех сотрудников: $allMoney")
     println("Средняя ЗП всех сотрудников: $averageMoney")

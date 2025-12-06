@@ -2,7 +2,7 @@ package org.example.lesson2
 
 fun main() {
     val buff = 20
-    val buffFinish: Float = 1+(buff/100f)
+    val buffFinish: Float = 1 + (buff / 100f)
     val countCrystals = 7
     val countIrons = 11
 

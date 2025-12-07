@@ -10,14 +10,7 @@ fun main() {
     val hoursOfSpace: Int = seconds / SECONDS_TO_HOUR
 
     var minutesOfSpace: Int = (seconds % SECONDS_TO_HOUR) / SECONDS_TO_MINUTE
-    var secondsOfSpace: Int = ((seconds % SECONDS_TO_HOUR) % 60) / 60
+    var secondsOfSpace: Int = ((seconds % SECONDS_TO_HOUR) % SECONDS_TO_MINUTE) / SECONDS_TO_MINUTE
 
-    println(
-        "${String.format("%02d", hoursOfSpace)}:${String.format("%02d", minutesOfSpace)}:${
-            String.format(
-                "%02d",
-                secondsOfSpace
-            )
-        }"
-    )
+        println("%02d:%02d:%02d".format(hoursOfSpace, minutesOfSpace, secondsOfSpace))
 }
